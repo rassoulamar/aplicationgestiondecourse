@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="200dp"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Les courses"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+   >
+
+        <ImageButton
+            android:id="@+id/imageButtonClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="todo"
+            android:src="@drawable/client"
+            android:paddingRight="5dp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonPanier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/panier"
+        android:contentDescription="@string/bulleclient"
+        android:onClick="@Accueil/lien_prod"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButtonCatalogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/catalogue"
+            android:paddingRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonFacture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/facture" />
+    </LinearLayout>
+
+</LinearLayout>

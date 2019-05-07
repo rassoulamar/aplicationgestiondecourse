@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.fixiphone.gestioncourses">
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/panier"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/panier"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Client"
+            android:label="Client" />
+        <activity
+            android:name=".Facture"
+            android:label="Facture" />
+        <activity
+            android:name=".Pannier"
+            android:label="Panier" />
+        <activity
+            android:name=".Produits"
+            android:label="Catalogue" />
+        <activity android:name=".Accueil">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
